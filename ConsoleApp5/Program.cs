@@ -1,10 +1,14 @@
-﻿namespace ConsoleApp5
+﻿namespace GeradorCPF
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Class1 cpf = new Class1();
+
+            string cpfCompleto = cpf.GerarCpfCompleto();
+
+            Console.WriteLine(cpfCompleto);
         }
     }
 }
